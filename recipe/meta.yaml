@@ -1,5 +1,5 @@
 {% set name = "pep562" %}
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pep562-{{ version }}.tar.gz
-  sha256: 58cb1cc9ee63d93e62b4905a50357618d526d289919814bea1f0da8f53b79395
+  sha256: f8bc94a273dd45bd81a06a57c04bc57fd46f9c054c1354fa056044ceba2f0605
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
